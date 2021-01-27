@@ -132,6 +132,10 @@ class AbstractScraper(metaclass=ExceptionHandlingMetaclass):
         raise NotImplementedError("This should be implemented.")
 
     @Decorators.schema_org_priority
+    def instructions(self) -> Optional[str]:
+        raise NotImplementedError("This should be implemented.")
+
+    @Decorators.schema_org_priority
     def ratings(self) -> Optional[float]:
         raise NotImplementedError("This should be implemented.")
 

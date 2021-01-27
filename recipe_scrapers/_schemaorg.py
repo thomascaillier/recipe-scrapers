@@ -152,6 +152,22 @@ class SchemaOrg:
 
         return instructions
 
+    def instructions(self):
+        instructions = self.data.get("recipeInstructions") or ""
+
+        if isinstance(instructions, list):
+            instructions_gist = []
+            for schema_instruction_item in instructions:
+                instructions_gist += self._extract_howto_instructions_text(
+                    schema_instruction_item
+                )
+
+            return [
+                normalize_string(instruction) for instruction in instructions_gist if instruction
+            ]
+
+        return None
+
     def ratings(self):
         ratings = self.data.get("aggregateRating")
         if ratings is None:
