@@ -20,7 +20,7 @@ class SeriousEats(AbstractScraper):
         ingredients = self.soup.findAll("li", {"class": "ingredient"})
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions = self.soup.findAll("li", {"class": "recipe-procedure"})
 
         return "\n".join(

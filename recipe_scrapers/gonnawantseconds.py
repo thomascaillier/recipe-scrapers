@@ -88,7 +88,7 @@ class GonnaWantSeconds(AbstractScraper):
                 ingGroup.append(x)
         return ingGroup
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions = self.soup.findAll(
             "div", {"class": "wprm-recipe-instruction-group"}
         )

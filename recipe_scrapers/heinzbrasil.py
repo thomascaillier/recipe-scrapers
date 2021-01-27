@@ -26,7 +26,7 @@ class HeinzBrasil(AbstractScraper):
             for ingredient in ingredients
         ]
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions = (
             self.soup.find("div", {"class": "krRecipeMakeItText"})
             .findNext("div", {"class": "class"})

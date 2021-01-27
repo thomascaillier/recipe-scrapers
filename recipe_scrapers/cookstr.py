@@ -37,7 +37,7 @@ class Cookstr(AbstractScraper):
             for ingredient in ingredients.findAll("li")
         ]
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions = self.soup.find("div", {"class": "stepByStepInstructionsDiv"})
 
         return "\n".join(

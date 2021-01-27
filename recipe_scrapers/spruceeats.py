@@ -32,7 +32,7 @@ class SpruceEats(AbstractScraper):
         ingredients = self.soup.findAll("li", {"class": "ingredient"})
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions = self.soup.find(
             "div", id="structured-project__steps_1-0"
         ).findAll("li")

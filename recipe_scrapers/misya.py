@@ -21,7 +21,7 @@ class Misya(AbstractScraper):
     def ingredients(self):
         return self.schema.ingredients()
 
-    def instructions(self):
+    def joined_instructions(self):
         return self.schema.joined_instructions()
 
     def ratings(self):

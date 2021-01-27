@@ -25,7 +25,7 @@ class SweetPeasAndSaffron(AbstractScraper):
             "div", {"class": "wprm-recipe-image wprm-block-image-normal"}
         ).find("img")["data-src"]
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions = [
             e.text
             for e in self.soup.find_all(

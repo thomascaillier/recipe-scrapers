@@ -22,7 +22,7 @@ class TasteOfHome(AbstractScraper):
     def ingredients(self):
         return self.schema.ingredients()
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions = self.soup.findAll("li", {"class": "recipe-directions__item"})
         if instructions:
             return "\n".join(

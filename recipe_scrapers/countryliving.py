@@ -27,7 +27,7 @@ class CountryLiving(AbstractScraper):
 
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions = self.soup.find("div", {"class": "direction-lists"}).find_all(
             "li"
         )

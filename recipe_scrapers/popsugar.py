@@ -48,7 +48,7 @@ class PopSugar(AbstractScraper):
 
         return ingredients
 
-    def instructions(self):
+    def joined_instructions(self):
         container = self._context().find("h3", text="Directions").parent
         return "\n".join([entry.get_text() for entry in container.findAll("li")])
 

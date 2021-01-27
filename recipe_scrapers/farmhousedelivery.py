@@ -55,7 +55,7 @@ class FarmhouseDelivery(AbstractScraper):
 
         return None
 
-    def instructions(self):
+    def joined_instructions(self):
         # Style 1
         instructions_marker = self.soup.find("p", text=re.compile(r"Instructions:"))
         if instructions_marker is not None:

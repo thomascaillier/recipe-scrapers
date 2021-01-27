@@ -34,8 +34,8 @@ class SteamyKitchen(AbstractScraper):
             if len(normalize_string(ingredient.get_text())) > 0
         ]
 
-    def instructions(self):
-        instructions = self.soup.find("div", {"class": "joined_instructions"}).findAll("p")
+    def joined_instructions(self):
+        instructions = self.soup.find("div", {"class": "instructions"}).findAll("p")
 
         return "\n".join(
             [normalize_string(instruction.get_text()) for instruction in instructions]

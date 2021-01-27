@@ -24,7 +24,7 @@ class Przepisy(AbstractScraper):
             for i, j in zip(ingredients[0::2], ingredients[1::2])
         ]
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions = self.soup.findAll("p", {"class": "step-info-description"})
 
         return "\n".join(

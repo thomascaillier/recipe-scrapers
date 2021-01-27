@@ -28,7 +28,7 @@ class FineDiningLovers(AbstractScraper):
 
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions_parent = self.soup.find(
             "div", {"class": "field--name-field-recipe-para-steps"}
         )

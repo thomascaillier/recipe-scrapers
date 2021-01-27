@@ -20,9 +20,9 @@ class TudoGostoso(AbstractScraper):
             normalize_string(ingredient.get_text()) for ingredient in ingredients_html
         ]
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions_html = self.soup.findAll(
-            "div", {"class": "joined_instructions e-joined_instructions"}
+            "div", {"class": "instructions e-instructions"}
         )
 
         return "\n".join(

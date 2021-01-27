@@ -32,7 +32,7 @@ class TheVintageMixer(AbstractScraper):
             if len(normalize_string(ingredient.get_text())) > 0
         ]
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions = self.soup.findAll(
             "div", {"class": "wprm-recipe-instruction-text"}
         )

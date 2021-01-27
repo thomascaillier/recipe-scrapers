@@ -22,7 +22,7 @@ class PurpleCarrot(AbstractScraper):
     def ingredients(self):
         return self.schema.ingredients()
 
-    def instructions(self):
+    def joined_instructions(self):
         return normalize_string(self.schema.joined_instructions())
 
     def nutrients(self):

@@ -57,7 +57,7 @@ class GreatBritishChefs(AbstractScraper):
             ingGroup.append(x)
         return ingGroup
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions = self.soup.find("div", {"class": "Method__List MethodList"})
 
         ins = instructions.findAll("div", {"class": "MethodList__StepText"})

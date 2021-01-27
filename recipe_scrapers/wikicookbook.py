@@ -29,7 +29,7 @@ class WikiCookbook(AbstractScraper):
 
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions = (
             self.soup.find("span", {"id": "Procedure"}).find_next("ol").findAll("li")
         )

@@ -25,9 +25,9 @@ class MyBakingAddiction(AbstractScraper):
 
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions = self.soup.find(
-            "div", {"class": "mv-create-joined_instructions"}
+            "div", {"class": "mv-create-instructions"}
         ).findAll("li")
 
         return "\n".join(

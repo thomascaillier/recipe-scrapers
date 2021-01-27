@@ -77,7 +77,7 @@ class TineNo(AbstractScraper):
                     ingGroup += lst
         return ingGroup
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions = self.soup.find("ol", {"class": "o-recipe-steps__step-groups"})
 
         ins = instructions.findAll("li", {"class": "o-recipe-steps__step-group"})

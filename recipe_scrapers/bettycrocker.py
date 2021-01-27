@@ -58,7 +58,7 @@ class BettyCrocker(AbstractScraper):
             not in ("Add all ingredients to list", "", "ADVERTISEMENT")
         ]
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions = self.soup.findAll("li", {"class": "recipePartStep"})
         retstr = ""
         for instruction in instructions:

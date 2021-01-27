@@ -38,7 +38,7 @@ class TestFoodRepublicScraper(ScraperTest):
                 "1/2 cup shallots, minced",
                 "small chunk of Parmesan rind",
                 "4 tablespoons unsalted butter, chilled and cut into small cubes",
-                "4 fresh eggs, poached (see joined_instructions)",
+                "4 fresh eggs, poached (see instructions)",
                 "4 slices prosciutto",
             ],
             self.harvester_class.ingredients(),

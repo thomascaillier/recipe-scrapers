@@ -25,9 +25,9 @@ class TastesOfLizzyT(AbstractScraper):
 
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions = self.soup.find(
-            "ul", {"class": "wprm-recipe-joined_instructions"}
+            "ul", {"class": "wprm-recipe-instructions"}
         ).findAll("li")
 
         return "\n".join(

@@ -27,9 +27,9 @@ class CookieAndKate(AbstractScraper):
 
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions = self.soup.find(
-            "div", {"class": "tasty-recipe-joined_instructions"}
+            "div", {"class": "tasty-recipe-instructions"}
         ).find_all("li")
 
         return "\n".join(

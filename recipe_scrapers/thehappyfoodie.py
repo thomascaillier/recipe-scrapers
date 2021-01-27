@@ -51,7 +51,7 @@ class TheHappyFoodie(AbstractScraper):
             for amount, name in ingredients
         ]
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions = self.soup.find("div", {"class": "recipe__instructions"}).findAll(
             "p"
         )
