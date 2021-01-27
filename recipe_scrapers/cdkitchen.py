@@ -18,8 +18,8 @@ class CdKitchen(AbstractScraper):
     def ingredients(self):
         return self.schema.ingredients()
 
-    def joined_instructions(self):
-        return self.schema.joined_instructions()
+    def instructions(self):
+        return self.schema.instructions()
 
     def image(self):
         return self.schema.image()

@@ -23,7 +23,7 @@ class Food(AbstractScraper):
 
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
-    def joined_instructions(self):
+    def instructions(self):
         instructions = self.soup.findAll("li", {"class": "recipe-directions__step"})
 
         return "\n".join([instruction.get_text() for instruction in instructions])

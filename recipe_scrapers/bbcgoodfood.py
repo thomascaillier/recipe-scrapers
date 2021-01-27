@@ -22,7 +22,7 @@ class BBCGoodFood(AbstractScraper):
     def ingredients(self):
         return self.schema.ingredients()
 
-    def joined_instructions(self):
-        inst = str(self.schema.joined_instructions())
+    def instructions(self):
+        inst = str(self.schema.instructions())
         instSoup = BeautifulSoup(inst, features="html.parser")
         return instSoup.text

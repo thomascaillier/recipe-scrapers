@@ -25,7 +25,7 @@ class GeniusKitchen(AbstractScraper):
 
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
-    def joined_instructions(self):
+    def instructions(self):
         raw_directions = (
             self.soup.find("div", {"class": "directions-inner container-xs"})
             .find("ol")

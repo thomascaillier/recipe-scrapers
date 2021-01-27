@@ -79,7 +79,7 @@ class SouthernLiving(AbstractScraper):
 
         return ingGroup
 
-    def joined_instructions(self):
+    def instructions(self):
         instructions = self.soup.find(
             "div",
             attrs={

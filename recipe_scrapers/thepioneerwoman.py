@@ -28,7 +28,7 @@ class ThePioneerWoman(AbstractScraper):
 
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
-    def joined_instructions(self):
+    def instructions(self):
         instructions = self.soup.findAll("div", {"class": "panel-body"})[-1]
 
         return normalize_string(instructions.get_text()).replace(".", ".\n")

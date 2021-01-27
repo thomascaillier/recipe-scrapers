@@ -61,7 +61,7 @@ class TestSouthernLiving(ScraperTest):
                 "Step 5 Cut sausage into 20 to 22 (2-inch-long) straight pieces, reserving curved pieces for another use. Divide dough into 20 to 22 (2-ounce) balls (a little larger than a golf ball). Roll each ball into a 4-inch-wide circle on a lightly floured surface. (Keep remaining dough balls covered while working.) Place about 1 tablespoon of the cheese on lower third of each dough circle, and top with 1 sausage piece. Fold dough over filling, folding in sides; pinch to seal. Place kolaches, seam side down, on 2 baking sheets lined with parchment paper, leaving 1 inch between them. Keep covered while working. Cover loosely with plastic wrap, and let stand in a warm place until dough doubles in size, about 45 minutes.",
                 "Step 6 Preheat oven to 375°F. Microwave remaining 1⁄4 cup butter in a small microwavable bowl on HIGH until melted, about 45 seconds. Brush kolaches with half of melted butter. Bake in preheated oven until golden brown, 14 to 16 minutes. Brush with remaining melted butter, and serve hot.",
             ],
-            self.harvester_class.joined_instructions(),
+            self.harvester_class.instructions(),
         )
 
     def test_ratings(self):

@@ -47,7 +47,7 @@ class NutritionByNathalie(AbstractScraper):
 
         return ingredients
 
-    def joined_instructions(self):
+    def instructions(self):
         title = self.soup.find(text="Directions:").find_parent("p")
 
         instructions = []

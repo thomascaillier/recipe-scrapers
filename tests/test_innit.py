@@ -94,7 +94,7 @@ Mixed Greens
 Wash greens & dry.
 Serve and Enjoy!
 Pair with your favorite music!""",
-            self.harvester_class.joined_instructions(),
+            self.harvester_class.instructions(),
         )
 
     def test_image(self):

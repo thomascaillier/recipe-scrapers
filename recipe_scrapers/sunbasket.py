@@ -27,7 +27,7 @@ class SunBasket(AbstractScraper):
 
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
-    def joined_instructions(self):
+    def instructions(self):
         instructions_container = self.soup.find(
             "div", {"class": "instructions-container"}
         )

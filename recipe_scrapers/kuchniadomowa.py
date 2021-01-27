@@ -13,7 +13,7 @@ class KuchniaDomowa(AbstractScraper):
         urls = self.soup.findAll("img", {"class": "article-img", "id": "article-img-1"})
         return f"https:{urls[1]['src']}"
 
-    def joined_instructions(self):
+    def instructions(self):
         instructions = self.soup.find("div", {"id": "recipe-instructions"}).findAll(
             "li"
         )

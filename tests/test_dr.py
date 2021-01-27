@@ -70,5 +70,5 @@ Lad derpå kagen køle helt af.
 Smelt chokoladen i et vandbad sammen med smørret, bland godt og hæld så chokoladen ovenpå karamellen. Jævn ud med en spatel. Sæt kagen på køl.
 
 Tag kagen ud af formen og fjern bagepapiret. Skær kagen i små firkanter som opbevares på køl til de skal serveres.""",
-            self.harvester_class.joined_instructions(),
+            self.harvester_class.instructions(),
         )

@@ -44,7 +44,7 @@ class TestHEBScraper(ScraperTest):
                 "Once Squash is fully cooked and soft remove it from oven and let it cool for 10 minutes before scooping out meat of squash. In a serving bowl scoop or with a fork scrape out squash and add truffle salt, butter and truffle oil.",
                 "Toss all ingredients together until butter is fully melted. Season to taste if needed and serve warm.",
             ],
-            self.harvester_class.joined_instructions(),
+            self.harvester_class.instructions(),
         )
 
     def test_image(self):

@@ -49,7 +49,7 @@ class HelloFresh(AbstractScraper):
             )
         ]
 
-    def joined_instructions(self):
+    def instructions(self):
         instructions_regex = re.compile(r"recipeDetailFragment.instructions.step-(\d)")
 
         instructions_container = self.soup.findAll(

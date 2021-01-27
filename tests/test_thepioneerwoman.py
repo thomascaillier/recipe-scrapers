@@ -48,5 +48,5 @@ class TestThePioneerWomanScraper(ScraperTest):
     def test_instructions(self):
         return self.assertEqual(
             "In a medium skillet, melt 2 tablespoons of butter over medium-low heat.\n Throw in the sliced onions and cook slowly for 20 to 25 minutes, stirring occasionally, until the onions are golden brown and soft.\n In a medium bowl, mix together the ground beef, salt & pepper, and Worcestershire.\n Form into 4 patties.\nMelt 2 tablespoons butter in a separate skillet over medium heat.\n Cook the patties on both sides until totally done in the middle.\n Assemble patty melts this way: Slice of bread, slice of cheese, hamburger patty, 1/4 of the cooked onions, another slice of cheese, and another slice of bread.\n On a clean griddle or in a skillet, melt 2 tablespoons butter and grill the sandwiches over medium heat until golden brown.\n Remove the sandwiches and add the remaining 2 tablespoons of butter to the skillet.\n Turn the sandwiches to the skillet, flipping them to the other side.\n Cook until golden brown and crisp, and until cheese is melted.\n Slice in half and serve immediately!",
-            self.harvester_class.joined_instructions(),
+            self.harvester_class.instructions(),
         )

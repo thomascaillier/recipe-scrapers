@@ -61,7 +61,7 @@ class TestFarmhouseDeliveryScraper(ScraperTest):
                 "❻ Roast for 55 minutes, then broil for 3 minutes for an extra crisp factor! Enjoy!",
                 "– For more lifestyle tips and recipes from Rebecca, you can find her on Instagram at @xxrlilly",
             ],
-            self.harvester_class.joined_instructions(),
+            self.harvester_class.instructions(),
         )
 
     def test_image(self):

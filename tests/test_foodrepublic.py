@@ -47,5 +47,5 @@ class TestFoodRepublicScraper(ScraperTest):
     def test_instructions(self):
         return self.assertEqual(
             "After peeling and trimming the asparagus, steam it in citrus water — water with Meyer lemon, orange and grapefruit slices — until fork tender.\nIn a pot add the Chardonnay, white wine vinegar, thyme, shallots and chunk of Parmesan rind; reduce about a quarter.\nRemove from heat and slowly whisk in cubes of butter until sauce is thick and glossy.\nPour 2 tablespoons of beurre blanc on a plate, top it with a poached egg, steamed white asparagus, prosciutto and grated Parmesan.\nSpring Asparagus Soup Recipe\nGoat Cheese And Asparagus Macaroni Salad Recipe\nRoasted Asparagus & Scrambled Eggs Recipe",
-            self.harvester_class.joined_instructions(),
+            self.harvester_class.instructions(),
         )

@@ -51,7 +51,7 @@ class TestEpicurious(ScraperTest):
     def test_instructions(self):
         return self.assertEqual(
             'Cook noodles according to package directions. During the last minute of cooking, add escarole. Drain and rinse under cold water.\nToss noodles, escarole, and chili sauce in a large bowl until coated; season with salt. Divide noodles between bowls. Slice scallions into 1" pieces and place on top of noodles along with some tofu crumbles, radishes, and peanuts.',
-            self.harvester_class.joined_instructions(),
+            self.harvester_class.instructions(),
         )
 
     def test_ratings(self):

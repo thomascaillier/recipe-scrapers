@@ -49,7 +49,7 @@ class TestGimmeSomeOvenScraper(ScraperTest):
     def test_instructions(self):
         return self.assertEqual(
             "Add the wine, brandy, orange juice, diced orange, diced apple, diced lemon and cinnamon stick to a large pitcher. Stir to combine. Taste and add in a few tablespoons of sweetener, if desired.\nCover and refrigerate for at least 30 minutes or up to 4 hours.\nServe the sangria over ice, topping off each glass with a splash of bubbly soda (or sparkling water) if desired.",
-            self.harvester_class.joined_instructions(),
+            self.harvester_class.instructions(),
         )
 
     def test_ratings(self):

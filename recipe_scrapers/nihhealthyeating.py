@@ -33,7 +33,7 @@ class NIHHealthyEating(AbstractScraper):
 
         return [normalize_string(paragraph.get_text()) for paragraph in ingredients]
 
-    def joined_instructions(self):
+    def instructions(self):
         instructions = self.soup.find("div", {"id": "recipe_directions"}).findAll(
             "div", {"class": "steptext"}
         )

@@ -59,7 +59,7 @@ class Matprat(AbstractScraper):
             cntr += 1
         return ilist
 
-    def joined_instructions(self):
+    def instructions(self):
         instructions = self.soup.find("div", {"class": "rich-text"})
         ins = instructions.findAll("li")
 

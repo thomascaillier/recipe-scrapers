@@ -27,7 +27,7 @@ class FoodNetwork(AbstractScraper):
 
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
-    def joined_instructions(self):
+    def instructions(self):
         instructions = self.soup.findAll("li", {"class": "o-Method__m-Step"})
 
         return "\n".join(

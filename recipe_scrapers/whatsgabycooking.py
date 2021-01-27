@@ -25,7 +25,7 @@ class WhatsGabyCooking(AbstractScraper):
             if len(ingredient) > 0
         ]
 
-    def joined_instructions(self):
+    def instructions(self):
         instructions = self.soup.findAll("li", {"class": "wprm-recipe-instruction"})
 
         return "\n".join(

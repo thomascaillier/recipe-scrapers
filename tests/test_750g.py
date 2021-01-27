@@ -53,5 +53,5 @@ class TestG750gScraper(ScraperTest):
 \nDans un saladier, mélangez les carottes râpées, les carottes cuites, le fenouil et les oranges en cubes.
 \nAjoutez la vinaigrette et mélangez.
 \nAjoutez la coriandre ciselée et le piment d'espelette.""",
-            self.harvester_class.joined_instructions(),
+            self.harvester_class.instructions(),
         )

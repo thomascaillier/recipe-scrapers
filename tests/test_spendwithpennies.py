@@ -52,7 +52,7 @@ class TestSpendWithPenniesScraper(ScraperTest):
     def test_instructions(self):
         return self.assertEqual(
             "Preheat oven to 350°F.\nIn a 2 qt casserole dish, combine flour, white sugar, cocoa powder, and baking powder.\nAdd milk and oil, and vanilla. Stir until well mixed.\nIn a small bowl, combine brown sugar, cocoa powder and chocolate chips. Sprinkle over cake batter. DO NOT STIR. Pour hot water over top.\nBake for 30-35 minutes or until the top looks cooked. Serve warm (with ice cream if desired).",
-            self.harvester_class.joined_instructions(),
+            self.harvester_class.instructions(),
         )
 
     def test_ratings(self):

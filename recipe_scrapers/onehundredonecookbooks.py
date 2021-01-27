@@ -31,7 +31,7 @@ class OneHundredOneCookBooks(AbstractScraper):
         ingredients = self.soup.find("blockquote").p.stripped_strings
         return list(ingredients)
 
-    def joined_instructions(self):
+    def instructions(self):
         return self.soup.find_all("p", limit=2, recursive=False)[1].get_text(
             "\n", strip=True
         )

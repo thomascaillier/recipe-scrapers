@@ -51,5 +51,5 @@ class TestAbrilScraper(ScraperTest):
     def test_instructions(self):
         self.assertEqual(
             "Derreta a manteiga e refogue a cebola até ficar transparente. Junte a carne e tempere com o sal. Mexa até a carne dourar de todos os lados. Acrescente a mostarda, o catchup, a pimenta-do-reino e o tomate picado. Cozinhe até formar um molho espesso. Se necessário, adicione água quente aos poucos. Quando o molho estiver encorpado e a carne macia, adicione os cogumelos e o creme de leite. Mexa por 1 minuto e retire do fogo. Sirva imediatamente, acompanhado de arroz e batata palha. Dica: Se juntar água ao refogar a carne, frite-a até todo o líquido evaporar.",
-            self.harvester_class.joined_instructions(),
+            self.harvester_class.instructions(),
         )

@@ -36,7 +36,7 @@ class Yummly(AbstractScraper):
             for ingredient in ingredients
         ]
 
-    def joined_instructions(self):
+    def instructions(self):
         instructions = self.soup.find("div", attrs={"class": "directions-wrapper"})
         return (
             "\n".join(

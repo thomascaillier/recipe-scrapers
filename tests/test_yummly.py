@@ -40,4 +40,4 @@ class TestYummlyScraper(ScraperTest):
         )
 
     def test_instructions(self):
-        return self.assertEqual("", self.harvester_class.joined_instructions())
+        return self.assertEqual("", self.harvester_class.instructions())

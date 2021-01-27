@@ -28,7 +28,7 @@ class TwoPeasAndTheirPod(AbstractScraper):
 
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
-    def joined_instructions(self):
+    def instructions(self):
         instructions = self.soup.select(".wprm-recipe-instruction-text")
 
         return "\n".join(

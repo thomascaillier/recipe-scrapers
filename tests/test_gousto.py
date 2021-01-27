@@ -47,7 +47,7 @@ class TestGoustoScraper(ScraperTest):
     def test_instructions(self):
         return self.assertEqual(
             "Preheat the oven to 200°C/ 180°C (fan)/ 400°F/ Gas 6\nBoil a kettle (used in steps 3 & 5)\nAdd 1-2 tbsp of olive oil to a pan on a high heat\nOnce the oil is hot, sear the pork tenderloin for 2 min on each side, or until browned all over (keep the pan for step 6)\nSeason to your taste with salt and pepper\nPlace the pork on an oven-proof tray and put in the oven for 8-10 min, or until cooked through\nOnce done, remove from the oven, cover well and allow to rest until step 7\nDissolve half the (whole) beef stock cube in 100ml (200ml) of boiling water\nCut the mushrooms into quarters\nPeel the onion(s) and chop finely\nCrush the garlic with the side of a knife, peel it and chop finely\nChop the parsley finely\nCook the pasta in a pot of boiling water and salt (optional) for 8-10 min or until the pasta is cooked to your taste, stirring occasionally, then drain\nReturn the pork pan to a medium-high heat, add the garlic and onion and cook for 1 min\nAdd the mushrooms and cook for 1 min\nReduce the heat, add the stock and 50ml (100ml) of cream and simmer for 5 min\nAdd the parsley\nGrate the parmesan\nCut the pork into slices (approx. 2cm)\nSeason the mushroom sauce to your taste with salt and pepper\nAdd the pasta to the sauce and mix well\nServe the pasta with the pork on top and sprinkle with parmesan\nEnjoy!",
-            self.harvester_class.joined_instructions(),
+            self.harvester_class.instructions(),
         )
 
     def test_ratings(self):

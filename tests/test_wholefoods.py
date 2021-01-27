@@ -47,7 +47,7 @@ Arrange 4 bread slices on a work surface. Top each with one slice of cheese, an 
 Brush both sides of each sandwich with remaining olive oil.
 Heat a large nonstick skillet over medium heat until hot.
 Place stacked sandwiches in the pan and cook until bread is golden brown and cheese has melted, pressing flat with a spatula occasionally, 4 to 5 minutes per side. Serve immediately. Depending on the size of your skillet, you might need to cook these in batches. If so, the first batch can be kept warm in a 200°F oven while finishing the second batch.""",
-            self.harvester_class.joined_instructions(),
+            self.harvester_class.instructions(),
         )
 
     def test_image(self):

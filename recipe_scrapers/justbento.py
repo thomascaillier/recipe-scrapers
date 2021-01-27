@@ -27,7 +27,7 @@ class JustBento(AbstractScraper):
         )
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
-    def joined_instructions(self):
+    def instructions(self):
         elements_after_title = (
             self.soup.find("div", {"class": "field-name-body"})
             .find("h3")

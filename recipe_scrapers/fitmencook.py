@@ -33,7 +33,7 @@ class FitMenCook(AbstractScraper):
 
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
-    def joined_instructions(self):
+    def instructions(self):
         instructions_parent = self.soup.find("div", {"class": "recipe-steps"})
         instructions = instructions_parent.findAll("li")
 

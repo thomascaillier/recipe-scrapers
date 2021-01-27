@@ -22,7 +22,7 @@ class TasteOfHome(AbstractScraper):
     def ingredients(self):
         return self.schema.ingredients()
 
-    def joined_instructions(self):
+    def instructions(self):
         instructions = self.soup.findAll("li", {"class": "recipe-directions__item"})
         if instructions:
             return "\n".join(
@@ -33,7 +33,7 @@ class TasteOfHome(AbstractScraper):
             )
         else:
             # In case our HTML parsing doesn't find any joined_instructions, fall back to what the schema provides.
-            return self.schema.joined_instructions()
+            return self.schema.instructions()
 
     def ratings(self):
         return self.schema.ratings()

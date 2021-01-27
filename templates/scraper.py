@@ -25,7 +25,7 @@ class Template(AbstractScraper):
         return self.schema.ingredients()
 
     def instructions(self):
-        return self.schema.joined_instructions()
+        return self.schema.instructions()
 
     def ratings(self):
         return self.schema.ratings()

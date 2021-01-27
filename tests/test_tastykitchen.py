@@ -57,5 +57,5 @@ class TestTastyKitchenScraper(ScraperTest):
                     "Refrigerate salsa for at least an hour. Serve with tortilla chips or cheese nachos.",
                 ]
             ),
-            self.harvester_class.joined_instructions(),
+            self.harvester_class.instructions(),
         )

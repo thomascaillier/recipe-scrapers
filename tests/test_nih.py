@@ -41,5 +41,5 @@ class TestNIHHealthyEatingRecipesScraper(ScraperTest):
     def test_instructions(self):
         return self.assertEqual(
             "Toss first six ingredients in a large bowl.\nSoak one rice paper wrapper in warm water until soft (1 to 2 minutes). Shake off excess water.\nPlace vegetable filling off-center on rice paper, and fold like an egg roll (tuck in the sides to keep the filling inside).\nRepeat with remaining vegetable filling and rice paper wrappers.\nOnce you have assembled all of the spring rolls, serve immediately.",
-            self.harvester_class.joined_instructions(),
+            self.harvester_class.instructions(),
         )

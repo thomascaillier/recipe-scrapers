@@ -44,8 +44,8 @@ class TestThewoksoflifeScraper(ScraperTest):
 
     def test_instructions(self):
         self.assertTrue(
-            self.harvester_class.joined_instructions().startswith(
+            self.harvester_class.instructions().startswith(
                 "Heat the milk until warm to the touch (not hot). Then "
             )
         )
-        self.assertEqual(len(self.harvester_class.joined_instructions()), 1786)
+        self.assertEqual(len(self.harvester_class.instructions()), 1786)

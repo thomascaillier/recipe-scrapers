@@ -21,8 +21,8 @@ class KingArthur(AbstractScraper):
     def ingredients(self):
         return self.schema.ingredients()
 
-    def joined_instructions(self):
-        return self.schema.joined_instructions()
+    def instructions(self):
+        return self.schema.instructions()
 
     def ratings(self):
         return self.schema.ratings()

@@ -64,7 +64,7 @@ class TestTineNoScraper(ScraperTest):
     def test_instructions(self):
         return self.assertEqual(
             "Kok ris etter anvisningen på pakken.\nTikka masala: Del kylling i biter. Brun kyllingen i smør i en stekepanne på middels varme. Rens og hakk paprika, chili, vårløk og hvitløk og ha det i stekepannen sammen med kyllingen. Rens og finhakk ingefær og frisk koriander. Krydre med garam masala, koriander og ingefær. Hell i crème fraîche og tomatpuré, og la småkoke i 5 minutter. Smak til med salt og pepper.\nRaita: Riv agurk og bland den med yoghurt. Hakk mynte og hvitløk og bland det i. Smak til med salt og pepper.",
-            self.harvester_class.joined_instructions(),
+            self.harvester_class.instructions(),
         )
 
     def test_ratings(self):

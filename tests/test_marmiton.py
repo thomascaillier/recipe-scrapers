@@ -58,7 +58,7 @@ class TestMarmitonScraper(ScraperTest):
             "Vérifiez la cuisson des légumes pour qu'ils ne soient plus fermes. "
             "Ajoutez les alors au mélange de tomates et prolongez la cuisson sur tout petit feu pendant 10 min.\n"
             "Salez et poivrez si besoin.",
-            self.harvester_class.joined_instructions(),
+            self.harvester_class.instructions(),
         )
 
     def test_ratings(self):
