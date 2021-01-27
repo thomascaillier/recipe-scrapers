@@ -152,7 +152,7 @@ class SchemaOrg:
 
         return instructions
 
-    def instructions(self):
+    def instructions_steps(self):
         instructions = self.data.get("recipeInstructions") or ""
 
         if isinstance(instructions, list):
