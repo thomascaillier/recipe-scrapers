@@ -22,7 +22,7 @@ class TudoGostoso(AbstractScraper):
 
     def instructions(self):
         instructions_html = self.soup.findAll(
-            "div", {"class": "instructions e-instructions"}
+            "div", {"class": "joined_instructions e-joined_instructions"}
         )
 
         return "\n".join(

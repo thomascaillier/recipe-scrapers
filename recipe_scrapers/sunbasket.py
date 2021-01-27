@@ -29,7 +29,7 @@ class SunBasket(AbstractScraper):
 
     def instructions(self):
         instructions_container = self.soup.find(
-            "div", {"class": "instructions-container"}
+            "div", {"class": "joined_instructions-container"}
         )
         instructions = instructions_container.findAll("div", {"class": "step"})
         instruction_list = []

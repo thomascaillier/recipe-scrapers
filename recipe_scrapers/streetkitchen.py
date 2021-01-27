@@ -34,7 +34,7 @@ class StreetKitchen(AbstractScraper):
     def instructions(self):
         instructions = self.soup.find("div", {"class": "the-content-div"}).findAll("p")[
             :-1
-        ]  # the last paragraph is advertisement, not instructions
+        ]  # the last paragraph is advertisement, not joined_instructions
         instructions_arr = []
         for instruction in instructions:
             instructions_arr.append(instruction.get_text())

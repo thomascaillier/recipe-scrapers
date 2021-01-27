@@ -48,5 +48,5 @@ class TestPrzepisyScraper(ScraperTest):
     def test_instructions(self):
         self.assertEqual(
             "Obierz ziemniaki, zetrzyj na tarce. Odsącz masę przez sito. Zetrzyj cebulę na tarce.\nDodaj do ziemniaków cebulę, jajka, gałkę muszkatołową oraz mini kostkę Knorr.\nWymieszaj wszystko dobrze, dodaj mąkę, aby nadać masie odpowiednią konsystencję.\nRozgrzej na patelni olej, nakładaj masę łyżką. Smaż placki z obu stron na złoty brąz i od razu podawaj.",
-            self.harvester_class.instructions(),
+            self.harvester_class.joined_instructions(),
         )

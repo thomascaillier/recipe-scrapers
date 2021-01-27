@@ -50,7 +50,7 @@ class Vegolosi(AbstractScraper):
 
     def instructions(self):
 
-        instructions = self.soup.findAll("div", {"class": "tasty-recipe-instructions"})
+        instructions = self.soup.findAll("div", {"class": "tasty-recipe-joined_instructions"})
 
         return "\n".join(
             [normalize_string(instruction.get_text()) for instruction in instructions]

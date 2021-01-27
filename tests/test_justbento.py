@@ -56,5 +56,5 @@ class TestJustBentoScraper(ScraperTest):
                     "This will keep for about 3-4 days, well covered in the refrigerator.",
                 ]
             ),
-            self.harvester_class.instructions(),
+            self.harvester_class.joined_instructions(),
         )

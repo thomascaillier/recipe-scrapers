@@ -71,7 +71,7 @@ class TestGonnaWantSeconds(ScraperTest):
                 "Make Sauce:",
                 "Melt the butter in a skillet. Sprinkle flour over melted butter and whisk to combine. Cook for 1 minute to remove the flour taste. Remove the skillet from heat and whisk in broth.\nPlace back on the heat and cook until the mixture has thickened and is bubbly. Cool sauce for 3-5 minutes. (Don't skip this step- if the sauce is too hot and you add the sour cream it will curdle it-yuck!) Add sour cream and chilies and stir until sauce is smooth and sour cream is completely dissolved.\nPour sauce over enchiladas and add remaining cheese over top. Bake in preheated oven for 20-25 minutes or until enchiladas are heated through and sauce is bubbly. Turn on the broiler and broil until the top is nicely golden. Garnish with chopped cilantro or green onions and serve.",
             ],
-            self.harvester_class.instructions(),
+            self.harvester_class.joined_instructions(),
         )
 
     def test_ratings(self):

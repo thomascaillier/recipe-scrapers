@@ -29,7 +29,7 @@ class CookieAndKate(AbstractScraper):
 
     def instructions(self):
         instructions = self.soup.find(
-            "div", {"class": "tasty-recipe-instructions"}
+            "div", {"class": "tasty-recipe-joined_instructions"}
         ).find_all("li")
 
         return "\n".join(

@@ -16,7 +16,7 @@ class TheSpruceEats(AbstractScraper):
 
     def instructions(self):
         instructions = self.soup.find(
-            "section", {"class": "section--instructions"}
+            "section", {"class": "section--joined_instructions"}
         ).find_all("li")
 
         return "\n".join(

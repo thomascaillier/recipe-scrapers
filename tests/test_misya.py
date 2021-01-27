@@ -51,7 +51,7 @@ class TestMisya(ScraperTest):
     def test_instructions(self):
         return self.assertEqual(
             "Montate i tuorli e le uova fino a renderle spumose.\nPoi aggiungete lo zucchero\nPoi unite il cioccolato ed il burro fuso.\nAggiungete adesso il cacao e la farina.\nQuindi aggiungete il colorante e la vaniglia e mescolate fino ad ottenere un impasto di un bel colore rosso.\nVersate l'impasto in 6 stampini imburrati ed infarinati meticolosamente.\nPoi infornate i tortini in forno già caldo a 190° e cuocete per 13-15 minuti circa.Vi accorgerete quando è il momento giusto quando vedrete una leggera crosticina sui bordi e la superficie ma muovendo lo stampino risulterà ancora morbido.Fate la prova con uno prima di tirarli via dal forno tutti e ricordatevi che ogni forno è diverso dall'altro.\nLasciate riposare un minuto, poi capovolgete su un piatto da dessert.\nServite il Tortino cuore caldo immediatamente spolverizzandolo con zucchero a velo.",
-            self.harvester_class.instructions(),
+            self.harvester_class.joined_instructions(),
         )
 
     def test_ratings(self):

@@ -68,5 +68,5 @@ class TestKitchnScraper(ScraperTest):
                     "Bake for 35 to 40 minutes. Bake uncovered until the sauce is bubbly, the cheese is browned, and the noodles are very tender, 35 to 40. Let cool for about 10 minutes before serving. Sprinkle with the remaining parsley just before serving.",
                 ]
             ),
-            self.harvester_class.instructions(),
+            self.harvester_class.joined_instructions(),
         )

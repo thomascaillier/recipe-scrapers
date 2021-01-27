@@ -22,4 +22,4 @@ class FoodAndWine(AbstractScraper):
         return self.schema.ingredients()
 
     def instructions(self):
-        return self.schema.instructions()
+        return self.schema.joined_instructions()

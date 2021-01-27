@@ -83,7 +83,7 @@ class SouthernLiving(AbstractScraper):
         instructions = self.soup.find(
             "div",
             attrs={
-                "class": lambda e: e.startswith("recipe-instructions") if e else False
+                "class": lambda e: e.startswith("recipe-joined_instructions") if e else False
             },
         )
 

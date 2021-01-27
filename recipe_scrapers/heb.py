@@ -25,7 +25,7 @@ class HEB(AbstractScraper):
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
     def instructions(self):
-        instructions_container = self.soup.find("div", {"class": "instructions"})
+        instructions_container = self.soup.find("div", {"class": "joined_instructions"})
         instructions = instructions_container.findAll(
             "span", {"class": "instructiontxt"}
         )

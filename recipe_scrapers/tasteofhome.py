@@ -32,8 +32,8 @@ class TasteOfHome(AbstractScraper):
                 ]
             )
         else:
-            # In case our HTML parsing doesn't find any instructions, fall back to what the schema provides.
-            return self.schema.instructions()
+            # In case our HTML parsing doesn't find any joined_instructions, fall back to what the schema provides.
+            return self.schema.joined_instructions()
 
     def ratings(self):
         return self.schema.ratings()

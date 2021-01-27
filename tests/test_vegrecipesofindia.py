@@ -59,7 +59,7 @@ class TestVegRecipesOfIndiaScraper(ScraperTest):
     def test_instructions(self):
         self.assertEqual(
             "making sarson ka saag\nFirstly clean and chop all the greens. then wash the greens well.\nIn a pressure cooker or pan add all the ingredients listed under saag except for maize flour.\nCover the pressure cook and cook for 6-7 minutes or more.\nIf cooking in a pan, then cover and let the greens cook till done. Do check occasionally.\nPour the greens along with the stock and maize flour in a blender. blend till smooth.\nIn another pan, pour the pureed greens.\nSimmer for a good 25-30 minutes.\ntempering for sarson ka saag\nIn another small pan, heat oil or ghee\nAdd the chopped onions and fry them till light brown.\nAdd the prepared saag. Stir and simmer for a couple of minutes.\nStir ocaasionally.\nServe sarson ka saag hot with some chopped onions, whole green chilies and a dollop of butter on the saag with makki di roti",
-            self.harvester_class.instructions(),
+            self.harvester_class.joined_instructions(),
         )
 
     def test_ratings(self):

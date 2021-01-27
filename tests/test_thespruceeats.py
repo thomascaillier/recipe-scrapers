@@ -58,7 +58,7 @@ class TestTheSpruceEatsScraper(ScraperTest):
     def test_instructions(self):
         return self.assertEqual(
             "Gather the ingredients.\nPre-heat the oven to 350 F.\nIn a large bowl, combine the ground lamb, egg, garlic, ground cumin, ground coriander, smoked paprika, dried oregano, salt, and black pepper.\nPlace the mixture into a loaf pan and cook in the oven for approximately 30 minutes or until the top is a light golden brown.\nYou can slice the loaf immediately if you like but, for best results, cool completely, wrap in aluminum foil, and refrigerate until firm.\nTo reheat, add a little olive oil to a large skillet, slice the loaf very thinly and crisp up the slices in the hot pan for a few minutes.\nAssemble the sandwiches with the vegetables and sauce.\nLamb\nkebab\ndinner\nmiddle eastern",
-            self.harvester_class.instructions(),
+            self.harvester_class.joined_instructions(),
         )
 
     def test_ratings(self):

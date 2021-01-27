@@ -50,7 +50,7 @@ class TestCybercook(ScraperTest):
     def test_instructions(self):
         return self.assertEqual(
             "Primeiro corte o frango em cubinhos.\nEm uma panela média, coloque o óleo, a cebola e espere dourar.\nDepois coloque o frango o tablete de caldo de galinha e o sal a gosto, aqueça até o ponto de fritura.\nMexa bem e tampe meia panela para que crie água, espere.\nSumir a água e começar a fritura.\nQuando o frango já tiver dourado, acrescente o molho de tomate.\nDepois coloque a lata de creme de leite e mexa até espalhar, com a mesma lata encha de água.\nMexa mais uma vez até misturar e deixe levantar fervura.\nAcrescente o oregano e pronto.\nO strogonoff está pronto para ser servido.",
-            self.harvester_class.instructions(),
+            self.harvester_class.joined_instructions(),
         )
 
     def test_ratings(self):

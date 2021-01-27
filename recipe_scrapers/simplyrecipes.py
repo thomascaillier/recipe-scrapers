@@ -29,7 +29,7 @@ class SimplyRecipes(AbstractScraper):
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
     def instructions(self):
-        instructions_html = self.soup.find("div", {"class": "instructions"}).findAll(
+        instructions_html = self.soup.find("div", {"class": "joined_instructions"}).findAll(
             "p"
         )
         instructions = [

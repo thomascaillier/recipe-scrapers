@@ -46,5 +46,5 @@ class TestSeriousEats(ScraperTest):
     def test_instructions(self):
         self.assertEqual(
             "1. In a food processor or blender, process horseradish to fine shreds. Add enough vinegar to cover, then season with salt. If it tastes too pungent, add water, 1 tablespoon at a time, until the flavor is a little less harsh (though it should still be very strong and pungent). Keep refrigerated in an airtight container, up to 3 weeks.",
-            self.harvester_class.instructions(),
+            self.harvester_class.joined_instructions(),
         )

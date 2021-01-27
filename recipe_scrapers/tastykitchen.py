@@ -31,7 +31,7 @@ class TastyKitchen(AbstractScraper):
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
     def instructions(self):
-        instructions = self.soup.find("span", {"itemprop": "instructions"}).findAll("p")
+        instructions = self.soup.find("span", {"itemprop": "joined_instructions"}).findAll("p")
 
         return "\n".join(
             [normalize_string(direction.get_text()) for direction in instructions]

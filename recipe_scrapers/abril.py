@@ -23,4 +23,4 @@ class Abril(AbstractScraper):
         return self.schema.ingredients()
 
     def instructions(self):
-        return normalize_string(self.schema.instructions())
+        return normalize_string(self.schema.joined_instructions())

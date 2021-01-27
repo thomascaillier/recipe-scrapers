@@ -50,7 +50,7 @@ class HelloFresh(AbstractScraper):
         ]
 
     def instructions(self):
-        instructions_regex = re.compile(r"recipeDetailFragment.instructions.step-(\d)")
+        instructions_regex = re.compile(r"recipeDetailFragment.joined_instructions.step-(\d)")
 
         instructions_container = self.soup.findAll(
             "div", {"data-test-id": instructions_regex}

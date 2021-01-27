@@ -14,7 +14,7 @@ class KuchniaDomowa(AbstractScraper):
         return f"https:{urls[1]['src']}"
 
     def instructions(self):
-        instructions = self.soup.find("div", {"id": "recipe-instructions"}).findAll(
+        instructions = self.soup.find("div", {"id": "recipe-joined_instructions"}).findAll(
             "li"
         )
         instructions = [x.text for x in instructions]

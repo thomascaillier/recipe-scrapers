@@ -46,7 +46,7 @@ class TestOneHundredOneCookBooksScraper(ScraperTest):
     def test_instructions(self):
         self.assertEqual(
             "Scoop a big spoonful of thick coconut cream from the top of the coconut milk can. Add it to a large pan over medium-high heat. When hot, stir in the garlic, onions, chile, and salt. Sauté for a couple minutes, just long enough for everything to soften up. Add the remaining coconut milk, and the water, and bring to a simmer before adding the broccoli and spinach. Simmer just long enough for the broccoli to get tender throughout, 2 - 4 minutes. Immediately remove the soup from heat and puree with an immersion blender.  Add more water if you feel the need to thin the soup out. Taste and add more salt if needed.\nServe sprinkled with tofu cubes, toasted almonds, and lots of scallions.",
-            self.harvester_class.instructions(),
+            self.harvester_class.joined_instructions(),
         )
 
     def test_ratings(self):

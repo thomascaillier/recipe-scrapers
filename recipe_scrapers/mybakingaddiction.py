@@ -27,7 +27,7 @@ class MyBakingAddiction(AbstractScraper):
 
     def instructions(self):
         instructions = self.soup.find(
-            "div", {"class": "mv-create-instructions"}
+            "div", {"class": "mv-create-joined_instructions"}
         ).findAll("li")
 
         return "\n".join(

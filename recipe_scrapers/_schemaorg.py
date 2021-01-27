@@ -136,7 +136,7 @@ class SchemaOrg:
                 instructions_gist += self._extract_howto_instructions_text(item)
         return instructions_gist
 
-    def instructions(self):
+    def joined_instructions(self):
         instructions = self.data.get("recipeInstructions") or ""
 
         if isinstance(instructions, list):

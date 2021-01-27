@@ -7,7 +7,7 @@ from ._utils import normalize_string
 
 """
     NOTE: This website has at least 2 prominent layouts styles, so there are two logic blocks and 2 test cases to
-    support in ingredients and instructions processing sections.
+    support in ingredients and joined_instructions processing sections.
 """
 
 

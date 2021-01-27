@@ -50,7 +50,7 @@ class TestAtelierDesChefsScraper(ScraperTest):
     def test_instructions(self):
         return self.assertEqual(
             "1. POUR LA P\u00c2TE \u00c0 CR\u00caPES\nPour la p\u00e2te \u00e0 cr\u00eapes : dans un bol, r\u00e9unir les farines et le sel. Casser l'oeuf et m\u00e9langer grossi\u00e8rement, puis ajouter progressivement le lait tout en fouettant \u00e9nergiquement.\nFaire fondre le beurre, puis l'ajouter \u00e0 l'appareil. Laisser ensuite reposer au frais pendant 1 h.\nR\u00e9aliser les cr\u00eapes sur une cr\u00eapi\u00e8re chaude jusqu'\u00e0 \u00e9puisement de la p\u00e2te.\n2. POUR LA GARNITURE\nPr\u00e9chauffer le four \u00e0 180 °C (th. 6).\n\u00c9plucher les pommes de terre et les couper en rondelles. Les disposer ensuite dans une casserole avec le gros sel, puis les couvrir d'eau. Porter \u00e0 \u00e9bullition, puis cuire les pommes de terre pendant 5 min avant de les \u00e9goutter.\nDorer les lardons dans une po\u00eale chaude, puis les \u00e9goutter sur une feuille de papier absorbant.\nCouper le fromage en fines tranches.\nDans une po\u00eale chaude, faire fondre 10 g de beurre puis r\u00e9chauffer doucement une cr\u00eape. Disposer ensuite les rondelles de pommes de terre, puis les lardons. Ajouter la cr\u00e8me et une tranche de fromage, saler et poivrer. Enfourner \u00e0 180 °C (th. 6) jusqu'\u00e0 ce que le fromage ait fondu.\nRenouveler l'op\u00e9ration pour les 5 autres cr\u00eapes.\nServir aussit\u00f4t.",
-            self.harvester_class.instructions(),
+            self.harvester_class.joined_instructions(),
         )
 
     def test_ratings(self):

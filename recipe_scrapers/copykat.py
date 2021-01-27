@@ -28,7 +28,7 @@ class CopyKat(AbstractScraper):
         return self.schema.ingredients()
 
     def instructions(self):
-        return self.schema.instructions()
+        return self.schema.joined_instructions()
 
     def ratings(self):
         return self.schema.ratings()

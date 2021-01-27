@@ -8,7 +8,7 @@ ON_EXCEPTION_RETURN_VALUES = {
     "yields": "",
     "image": "",
     "ingredients": [],
-    "instructions": "",
+    "joined_instructions": "",
     "ratings": -1,
     "reviews": None,
     "links": [],

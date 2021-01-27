@@ -44,7 +44,7 @@ class Mindmegette(AbstractScraper):
         return ingredients
 
     def instructions(self):
-        instructions = self.soup.find("div", {"class": "instructions"}).findAll("li")
+        instructions = self.soup.find("div", {"class": "joined_instructions"}).findAll("li")
 
         instructions_arr = []
         for instruction in instructions:

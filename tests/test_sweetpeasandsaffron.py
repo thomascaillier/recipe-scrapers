@@ -80,7 +80,7 @@ class TestSweetPeasAndSaffron(ScraperTest):
                 "Reduce heat and simmer, stirring occasionally, for 25-35 minutes.",
                 "Remove from heat and stir in maple syrup and any other ingredients for the flavor variations.",
             ],
-            self.harvester_class.instructions(),
+            self.harvester_class.joined_instructions(),
         )
 
     def test_ratings(self):

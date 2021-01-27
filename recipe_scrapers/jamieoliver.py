@@ -30,5 +30,5 @@ class JamieOliver(AbstractScraper):
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
     def instructions(self):
-        instructions = self.soup.find("div", {"class": "instructions-wrapper"})
+        instructions = self.soup.find("div", {"class": "joined_instructions-wrapper"})
         return normalize_string(instructions.get_text())

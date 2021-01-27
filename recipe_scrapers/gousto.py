@@ -50,7 +50,7 @@ class Gousto(AbstractScraper):
         return ingredients
 
     def instructions(self):
-        instructions = self.soup.find("div", {"id": "instructions"}).find_all(
+        instructions = self.soup.find("div", {"id": "joined_instructions"}).find_all(
             "div", {"class": "indivrecipe-cooking-text-wrapper"}
         )
 

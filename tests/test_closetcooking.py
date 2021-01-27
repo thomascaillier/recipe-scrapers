@@ -46,5 +46,5 @@ class TestClosetCooking(ScraperTest):
     def test_instructions(self):
         return self.assertEqual(
             "Heat the oil in a pan over medium-high heat, add the chicken (seasoned with salt and pepper) and cook until lightly golden brown.\nAdd the onions and jalapenos and cook until tender, about a minute before adding the garlic and cooking another minute.\nAdd the chicken broth and deglaze the skillet by scraping the brown bits up off of the bottom of the pan as the broth sizzles.\nAdd the cheese and cook until it has melted and the sauce is nice and smooth",
-            self.harvester_class.instructions(),
+            self.harvester_class.joined_instructions(),
         )

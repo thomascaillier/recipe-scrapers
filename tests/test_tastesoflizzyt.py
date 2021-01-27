@@ -47,5 +47,5 @@ class TestTastesOfLizzyTScraper(ScraperTest):
     def test_instructions(self):
         self.assertEqual(
             "In a large bowl, cream together the shortening, brown sugar, molasses and buttermilk.\nIn a separate bowl, sift together the flour, baking soda, ginger, cinnamon, nutmeg, cloves and salt.\nAdd the dry ingredients to the creamed sugar mixture and mix well.\nRoll the dough into balls and then roll the balls in sugar.\nPlace the cookie dough balls on an ungreased cookie sheet and bake at 350 degrees for 11-12 minutes.\nAllow the cookies to cool on a wire rack and then store in an airtight container.",
-            self.harvester_class.instructions(),
+            self.harvester_class.joined_instructions(),
         )
