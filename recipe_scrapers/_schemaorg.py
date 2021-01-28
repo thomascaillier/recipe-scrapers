@@ -153,7 +153,7 @@ class SchemaOrg:
         return instructions
 
     def instructions_steps(self):
-        instructions = self.data.get("recipeInstructions") or ""
+        instructions = self.data.get("recipeInstructions") or []
 
         if isinstance(instructions, list):
             instructions_gist = []
@@ -166,7 +166,7 @@ class SchemaOrg:
                 normalize_string(instruction) for instruction in instructions_gist if instruction
             ]
 
-        return None
+        return instructions
 
     def ratings(self):
         ratings = self.data.get("aggregateRating")
